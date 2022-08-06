@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('taxadiaria', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_taxa');
+            $table->unsignedFloat('valor');
+            $table->date('data');
             $table->foreign('id_taxa')
                 ->references('id')
                 ->on('taxas')
