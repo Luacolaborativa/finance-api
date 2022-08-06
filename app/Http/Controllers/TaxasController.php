@@ -15,7 +15,7 @@ class TaxasController extends Controller
      */
     public function index()
     {
-        //
+        return 'Theres';
     }
 
     /**
